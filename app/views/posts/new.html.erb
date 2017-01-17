@@ -1,0 +1,44 @@
+<div class='container'>
+	<div class='col-lg-4'>
+		<h1 class='two'>Make Reservation</h1>
+			<%= form_for @post do |f|%>
+			<div class= 'error'>
+				<% if flash[:errors] %>
+					<% flash[:errors].each do |error| %>
+						<p> <%= error %> </p> 
+					<% end %>
+				<% end %>
+			</div>
+			<h4>
+				<%= f.label :name %><br>
+				<%= f.text_field :name %><br>
+				<%= f.label :email%><br>
+				<%= f.text_field :email %><br>
+				<%= f.label :phone%><br>
+				<%= f.number_field :phone %><br>
+				<%= f.label :pick_up_location %><br>
+				<%= f.text_field :pick_up_location %><br>
+				<%= f.label :destination%><br>
+				<%= f.text_field :destination%><br>
+				<%= f.label :pick_up_date%><br>
+				<%= f.date_field :pick_up_date %><br>
+				<%= f.label :pick_up_time%><br>
+				<%= f.time_field :pick_up_time %><br><br>
+				<button class='btn btn-primary'>Submit</button>
+		</h4>
+		<%end %>
+
+	</div>
+
+	<div class='col-lg-8'>
+		<center><h1 class='two'>Waltham-City Taxi, First Class Service</h1></center>
+		<center><h2 class='two'>Get Where You're going</h2></center>
+		<%= image_tag("pictures/boston1.jpg", height: '120%', width: '100%' ) %>
+
+	</div>
+
+</div>
+<hr>
+    <footer>
+     <center><h4>&copy; 2016 Waltham-City Taxi, Inc.</h4></center> 
+    </footer>

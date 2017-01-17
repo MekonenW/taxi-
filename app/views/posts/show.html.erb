@@ -1,0 +1,33 @@
+<div class='confirm'>
+
+	<center>
+		<h1><%= @post.name %>, Thank You!</h1>
+		<h2>For Choosing Waltham-City Taxi</h2>
+		<h3>Name: <%= @post.name %><br>
+			Email: <%= @post.email %><br>
+			Phone: <%= @post.phone %><br>
+			Pick Up Location:
+			<%= @post.pick_up_location %><br>
+			Destination:
+			<%= @post.destination %><br>
+			Pick Up Date:
+			<%= @post.pick_up_date %><br>
+			Pick Up Time:
+			<%= @post.pick_up_time %><br>
+		</h3>
+		<h3>We just sent you a confirmation email to <%= @post.email %>.</h3>
+	</center>
+	<%= image_tag("pictures/back.png", height: '90%', width: '100%' ) %>
+
+<div>
+	<footer>
+		<p>&copy; 2016 Waltham-City Taxi, Inc.</p>
+	</footer>
+</div>
+
+
+
+
+
+
+

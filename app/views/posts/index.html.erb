@@ -1,0 +1,105 @@
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+      	<div class='col-md-3'>
+          <h3 class='one'>Always Committed To Serving You Better</h3>
+            <%= image_tag("pictures/24_7-taxi.png", height: '100%', width: '100%' ) %>
+			  </div>
+        <div class= 'col-md-6 container text-center'>
+  				<h1 class='one'>WALTHAM-CITY TAXI</h1>
+  				<button class='btn btn-primary'><a href="posts/new"><h3>Book online</h3></a></button>
+  				<button class='btn btn-primary'><a href="tel:+1857-204-2889"><h3>857-204-2889</h3></a></button><br><br>
+  				<div class='point text-center'>
+  					<a href="#" class='btn btb-sm btn-warning'>Convenient</a>
+  					<a href="#" class='btn btb-sm btn-warning'>Affordable</a>
+  					<a href="#" class='btn btb-sm btn-warning'>Reliable</a>
+  					<a href="#" class='btn btb-sm btn-warning'>Safe</a>
+
+  				</div>
+			  </div>
+        <div class='col-md-3'>
+          <h3 class='one'>Serving Waltham and its surrounding cities</h3>
+          <%= image_tag("pictures/boston2.jpg",  height: '100%', width: '100%' ) %>
+        </div>
+      </div>
+      <div class='intro'>
+        <h2 class='liz'>Waltham-City Taxi offers reliable flat-rate transportation for many of our out-of-town taxi cab services.
+</h2>
+        <h3 class='two'>When it comes to taxi services in and around the Waltham, MA area, no one does it better than our team at Waltham-city Taxi. We offer local, long-distance, and out-of-town transportation services to meet the needs of all our customers. While we encourage you to call ahead to book your ride with us, we also accept on-demand calls. We even offer 24/7 emergency taxi service, so you can get the transportation you need, when you need it.</h3>
+
+      </div>
+
+    </div>
+<!-- navbar ends -->
+    <div class="container">
+      <div id='services'></div>
+      <div class="row">
+        <center><h1 class='head'>Our Services</h1></center>
+        <div class="col-md-4">
+          <center><h1>Airport Services</h1></center>
+          <%= image_tag("pictures/airport.jpg",  height: '100%', width: '100%' ) %><br>
+            <h4>From home, office or your hotel we'll get you to Logan International Airport as well as other local airports in timly manner. No matter where you are going, our drivers will take you to your destination safely. </h4>
+            <ul>
+              <li>Prearranged services to and from Logan</li><br>
+              <li>All major credit cards accepted</li><br>
+              <li>Timly pick up guaranteed</li><br>
+            </ul> 
+        </div>
+        <div class="col-md-4">
+          <center><h1>Long Trip </h1></center>
+          <%= image_tag("pictures/long2.jpg", height: '80%',width: '98%' ) %><br><br>
+          <h4>We pride ourselves on porviding you with outstanding services. While using our services, we want to make you feel you're right at home.</h4>
+           <h4>Just relax and enjoy in our comfortable vehichle and we will take you where you want safly</h4>
+          <ul>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h1>Package Delivery</h1>
+          <%= image_tag("pictures/delivery.jpg",  height: '100%', width: '98%' ) %><br><br>
+          <h4>Every Package represents a valued customer. Our cabs always provide fast, reliable, comfortable and trustworthy journey. We provide reliable package delivery services through out Massachusetts</h4>
+          <ul>
+            <li>Clean Cabs</li><br>
+            <li>Friendly and polite drivers</li><br>
+            <li>Every driver is licensed and insured</li><br>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+      <div class='container'>
+        <div id='contact'>
+          <%= image_tag("pictures/contact.png",  height: '100%', width: '100%' ) %>
+
+          <div class='well' id='contact'>
+            <div class= 'container text-center'>
+              <div class='form group'>
+                <h2>Phone: <button class='btn btn-primary'><a href="tel:+1857-204-2889"><h3>857-204-2889</h3></a></button></h2>
+                <h2>Email: <button class='btn btn-primary'><a href="mailto:mek9760@gmail.com?Subject=From%20waltham%20city%20taxi" target="_top"><h3>mek9760@gmail.com</h3></a></button></h2>
+            </div>  
+        </div>
+      </div>
+    </div>
+  <hr>
+
+
+    <!-- <center><h1>All Reservations</h1>
+      <% @posts.each do |post|%>
+        <h3>Name: <%= post.name %></h3>
+        <h3><%= link_to "Detail", post%></h3>
+        <form action='/posts/<%= post.id %>' method='post'>
+          <input type='hidden' name="authenticity_token" value="<%= form_authenticity_token %>">
+          <input type='hidden' name='_method' value='delete'>
+          <button type='submit'>Delete</button>
+        </form>
+      <% end %>  
+    </center> -->
+    
+  
+
+<hr>
+    <footer>
+     <center><h4>&copy; 2016 Waltham-City Taxi, Inc.</h4></center> 
+    </footer>
+
